@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+    <title>Ajax With Api Call</title>
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Ajax With Api Call</a>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-primary" id="get-btn">Get</button>
+            <button class="btn btn-success" id="post-btn">Post</button>
+            <button class="btn btn-warning" id="put-btn">Put</button>
+            <button class="btn btn-danger" id="delete-btn">Delete</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-3">
+    <div class="row">
+       <div class="col">
+           <table class="table table-hover text-center table-secondry table-striped">
+               <thead class="bg-secondary text-white">
+                   <tr>
+                        <th>Emp Id</th>
+                        <th>First name </th>
+                        <th>Last Name</th>
+                        <th>Gmail</th>
+                        <th>Gender</th>
+                        <th>Ip address</th>
+                    </tr>
+               </thead>
+               <tbody id="table-body">
+
+               </tbody>
+           </table>
+       </div>
+    </div>
+</div>
+
+
+<script src="../bootstrap/js/jquery.js"> </script>
+<script src="../bootstrap/js/popper.js"> </script>
+<script src="../bootstrap/js/bootstrap.js"> </script>
+<script src="../bootstrap/js/mdb.js"> </script>
+<script src="app.js"> </script>
+
+<!--Aplication js file -->
+
+</body>
+</html>

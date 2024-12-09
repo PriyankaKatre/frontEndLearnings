@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const animals = [
+            {name: 'Fluffykins', species: 'Rabbit'},
+            {name: 'Caro', species: 'Dog'},
+            {name: 'Hamilton', species: 'Dog'},
+            {name: 'Harold', species: 'Fish' , age:5},
+            {name: 'Ursula', species: 'Cat'},
+            {name: 'Jemmy', species: 'Fish', age :4},
+        ]
+
+        const filter = animals.filter(animal => animal.species === 'Dog').map(animal => animal.name)
+
+        console.log(filter);
+        // const fish = []
+        // for(let i= 0; i < animals.length; i++) {
+        //     if(animals[i].species === 'Fish') {
+        //         fish.push(animals[i]);
+        //     }
+        // }
+
+        // console.log(fish);
+
+        var array = [{
+            id: 10,
+            name: "name10"
+        },
+        {
+            id: 20,
+            name: "name20"
+        }
+        ];
+        var id = 20;
+        var res = array.filter(item => item.id === id ? item.name : null);
+        console.log(res);
+    </script>
+</body>
+</html>

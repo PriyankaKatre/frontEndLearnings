@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arry Insert Element</title>
+</head>
+<body>
+     <input type="text" id="position" placeholder="Please Enter the position">
+    <input type="text" id="elem" placeholder="Plaese enter the value">
+
+    <button onclick="insertElement()">Submit</button>
+    <script>
+        const insertElement= () =>{
+            let data = [10, 20, 40 ,50 ,60, 70];
+            let elem = parseInt(document.getElementById('elem').value);
+            let position = parseInt(document.getElementById('position').value);
+
+            for(let i=data.length-1; i >= 0; i--) {
+                if(i>=position) {
+                    data[i+1] = data[i];
+
+                    if(i === position) {
+                        data[i] = elem;
+                    }
+                }
+            }
+            console.warn(data);
+        }
+
+        // let data = [10, 20, 40 ,50 ,60, 70];
+        // data.splice(2, 3, 3000);
+        // console.log(data);
+    </script>
+
+</body>
+</html>

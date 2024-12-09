@@ -1,0 +1,11 @@
+1) Create page, Add it to the menues. Add featured image. publish
+2) Create post, add content, content iamge, featured image, add excerpt(short visible text). publish
+3) Add Category, add category to the post, add category to menus, add subcategory, add subcategory to the menus
+4) Add limit to the post/ Pagination. settings/reading
+5) how to set any page as home page. Appearance/customize or settings/reading
+6) edit, update, delete post comment in logged in and logged out state
+7) enable/disable comment on page or post
+ permanently remove comment need to use plugin 
+8) How to set parmalink
+9) Add widget to side bar or footer
+10) how to add/change site logo, fav icon, title and tagline

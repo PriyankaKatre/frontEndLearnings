@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const animals = [
+            {name: 'Fluffykins', species: 'Rabbit', age:5},
+            {name: 'Caro', species: 'Dog', age:5},
+            {name: 'Hamilton', species: 'Dog', age:5},
+            {name: 'Harold', species: 'Fish' , age:5},
+            {name: 'Ursula', species: 'Cat', age:5},
+            {name: 'Jemmy', species: 'Fish', age :4},
+        ]
+
+        //Using Map
+        const animalName = animals.map(animal => animal.name)
+        console.log(animalName)
+
+        //Using normal for loop
+        const name = [];
+        for(let i =0; i< animals.length; i++) {
+            name.push(animals[i].name)
+        }
+        console.log(name);
+
+    </script>
+</body>
+</html>

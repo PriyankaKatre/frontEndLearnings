@@ -1,0 +1,17 @@
+ LoginAction.php
+ alert()
+
+ update.php
+ getimagesize() returns array where we can use those values
+
+ I always see 0 error what/when error can be
+ $error =  $_FILES["image"]["error"]; 
+
+ Can we reduce image size(GB/MB) using PHP? If yes then is this better way or we have to use small image rather then redusing size in php.
+
+ Wordpress
+ priyanka, admin
+
+ TO DO
+ Pagintaion,
+ search

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const animals = [
+            {name: 'Fluffykins', species: 'Rabbit', age:5},
+            {name: 'Caro', species: 'Dog', age:5},
+            {name: 'Hamilton', species: 'Dog', age:5},
+            {name: 'Harold', species: 'Fish' , age:5},
+            {name: 'Ursula', species: 'Cat', age:5},
+            {name: 'Jemmy', species: 'Fish', age :4},
+        ]
+
+        //Using Reduce
+        const total =  animals.reduce((ageSum, animal) => {
+            return ageSum + animal.age
+        }, 0)
+        console.log(total)
+        //Using normal for loop
+        let ageSum = 0;
+        for(let i = 0; i< animals.length; i++) {
+            ageSum += animals[i].age
+        }
+        console.log(ageSum);
+
+    </script>
+</body>
+</html>

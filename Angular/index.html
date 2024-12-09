@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Angular BootStrap Modal Example 1</title>
+      <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="./assets/app/css/app.css" rel="stylesheet">
+         </head>
+   <body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" 
+           data-toggle="collapse" data-target="#navbar" 
+           aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Angular Bootstrap Modal</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container app-topmargin" 
+      ng-app="sampleAngularApp" ng-controller="AppController">
+         <div class="row">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-3">
+               <button class="btn btn-primary" ng-click="openDlg()">Open Modal</button>
+            </div>
+         </div>
+         <ng-include src="'./sampleModal.html'"></ng-include>
+         
+      </div>
+      <script src="./assets/jquery/js/jquery-2.2.4.min.js"></script>
+      <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+      
+      <!-- angular js related libraries -->
+      <script src="./assets/angular-1.6.7/angular.min.js"></script>
+      <script src="./assets/app/js/AppController.js"></script>
+      <script src="./assets/app/js/app.js"></script>
+   </body>
+</html>

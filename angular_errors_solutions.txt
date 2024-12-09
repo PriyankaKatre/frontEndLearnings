@@ -1,0 +1,9 @@
+error 
+ng : File C:\Users\dkatr\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170. At line:1 char:1 + ng start + ~~ + CategoryInfo : SecurityError: (:) [], PSSecurityException + FullyQualifiedErrorId : UnauthorizedAccess
+
+
+solution
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+git config --global user.name "PriyankaKatre"
+git config --global user.email priyankack1707@gmail.com

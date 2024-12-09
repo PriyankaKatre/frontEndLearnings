@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data2= [3, 7, 12, 34, 56, 90];
+        let data1= [4, 6,8, 9, 25, 45, 5, 2, 78];
+        let result = [];
+
+        data1.sort((a, b) => a-b);
+        console.log(data1);
+// const num=[56, 23, 45, 56, 67, 78, 89, 12, 34];
+// let temp;
+// for(let i=0;i<num.length;i++){
+//     for(let j=i+1;j<num.length;j++){
+//         if(num[i]>num[j]){
+//             temp=num[i]
+//             num[i]=num[j]
+//             num[j]=temp
+//         }
+//     }
+// }
+
+// console.log(num);
+// let temp1;
+
+//         for(let i = 0; i< data1.length; i++) {
+//             for(let j = i+1; j< data1.length; j++) {
+//                 if(data1[i] > data1[j]) {
+//                   temp1 = data1[i];
+//                   data1[i] = data1[j];
+//                   data1[j]= temp1
+//                 }
+//             }
+
+//         }
+// console.log(data1);
+        let i = 0, j = 0; k = 0;
+        while(i<data1.length && j <data2.length) {
+            if(data1[i] < data2[j]) {
+                result[k] = data1[i];
+                i++;
+            }
+            else {
+                result[k] = data2[j];
+                j++
+            }
+            k++
+        }
+        while(j <data2.length) {
+            result[k] = data2[j];
+            j++;
+            k++
+        }
+
+        console.log(result);
+
+    </script>
+</body>
+</html>

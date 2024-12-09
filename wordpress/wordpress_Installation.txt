@@ -1,0 +1,9 @@
+1) Download the wordpress from wordpress.org site
+2) install it
+3) extract it in htdocs 
+4) Rename the folder with desired name 
+5) create the database 
+6) go to browser 
+7) open the folder in localhost ex localhost/wescube
+8) setup window will open select appropriate info 
+9) 
